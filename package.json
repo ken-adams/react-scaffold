@@ -1,7 +1,7 @@
 {
-  "name": "pluralsight-redux-starter",
+  "name": "react-scaffold",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux Pluralsight course by Cory House",
+  "description": "React and Redux scaffold",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch  ",
@@ -10,7 +10,7 @@
     "lint:watch": "npm run lint -- --watch",
     "babel-version": "babel --version"
   },
-  "author": "Cory House",
+  "author": "Stefan Lapcevic",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
