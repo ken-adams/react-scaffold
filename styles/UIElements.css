@@ -1,0 +1,63 @@
+.main-button {
+    width: 130px;
+}
+
+.main-button button{
+    width: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    background-color: #ff6c00;
+    outline: 0;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.main-button button:hover {
+    background-color: orange;
+}
+
+.secondary-button {
+    width: 130px;
+}
+
+.secondary-button button{
+    width: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    box-shadow: 6px 4px 5px 1px rgba(224,224,224,1);
+    background-color: #ffffff;
+    outline: 0;
+    border: 2px solid #ff6c00;
+    color: #ff6c00;
+    font-size: 15px;
+    height: 35px;
+    font-weight: bold;
+}
+
+/**
+    PROFILE COMP
+ */
+
+.columns.profile-section{
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 2px 3px 5px 2px rgba(224,224,224,1);
+    -moz-box-shadow: 2px 3px 5px 2px rgba(224,224,224,1);
+    box-shadow: 2px 3px 5px 2px rgba(224,224,224,1);
+    flex-direction: column;
+}
+
+.profile-section img {
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.column.profile-section-btns {
+
+}
