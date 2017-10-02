@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const MainButton = (props) => {
 	return (
-		<div className="main-button">
+		<div className={((!props.className ? "" : props.className) + " main-button").trim()}>
 			<button>{props.text}</button>
 		</div>
 	);

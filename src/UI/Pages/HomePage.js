@@ -19,9 +19,8 @@ class HomePage extends React.Component {
             <div className="homepage">
                 <h1>Home Page</h1>
                 <p>This is homepage</p>
-
+				<br />
                 <ProfileSection />
-                {/*<MainButton text="Pay"/>*/}
                 {/*<SecondaryButton text="Cancel"/>*/}
             </div>
 

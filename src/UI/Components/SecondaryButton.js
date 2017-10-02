@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const SecondaryButton = (props) => {
 	return (
-		<div className="secondary-button">
+		<div className={((!props.className ? "" : props.className) + " secondary-button").trim()}>
 			<button>{props.text}</button>
 		</div>
 	);
