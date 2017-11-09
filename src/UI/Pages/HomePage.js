@@ -19,8 +19,12 @@ class HomePage extends React.Component {
             <div className="homepage">
                 <h1>Home Page</h1>
                 <p>This is homepage</p>
+                <label htmlFor="text">Plese enter text</label>
+                <input type="text" name="text" onChange={(e) => this.props.actions.homepageActions.setText(e.target.value)}/>
+                <button onClick={() => this.props.actions.homepageActions.postText(this.props.homepage.text)}>Post</button>
 				<br />
-                <ProfileSection />
+                <div>{this.props.homepage.response["value"]}</div>
+                {/* <ProfileSection /> */}
                 {/*<SecondaryButton text="Cancel"/>*/}
             </div>
 
@@ -36,7 +40,9 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
 	return {
-		actions: bindActionCreators(homepageActions, dispatch)
+		actions: {
+            homepageActions: bindActionCreators(homepageActions, dispatch)
+        }
 	};
 }
 

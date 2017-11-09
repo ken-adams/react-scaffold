@@ -3,7 +3,7 @@ import homepageReducer from "./homepageReducer";
 
 
 const rootReducer = combineReducers({
-	homepageReducer
+	homepage: homepageReducer
 });
 
 export default rootReducer;
