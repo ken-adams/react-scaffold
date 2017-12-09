@@ -15,7 +15,6 @@ export function saveResponse(value) {
 export function postText(value) {
     return dispatch => {
         const data = {value};
-        // console.log("payload:", data);
         return fetch("https://httpbin.org/post", 
             {
                 method: "post",
@@ -29,4 +28,26 @@ export function postText(value) {
                 dispatch(saveResponse(JSON.parse(json.data)));
             }).catch(err => console.error("Error while doing post", err, err.stack));
     };
+}
+
+export function get () {
+    return dispatch => {
+        return fetchData().then(response => {
+            console.log("URL from Response:", response.url);
+        }).catch(err => {
+            console.error("Error: ", err);
+        });
+    }
+}
+
+async function fetchData() {
+    const data = await fetch("https://httpbin.org/get", 
+    {
+        method: "get",
+        headers: {
+            "Content-Type":"application/json"
+        }
+    });
+    const json = await data.json();
+    return json;
 }

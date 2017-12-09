@@ -22,6 +22,7 @@ class HomePage extends React.Component {
                 <label htmlFor="text">Plese enter text</label>
                 <input type="text" name="text" onChange={(e) => this.props.actions.homepageActions.setText(e.target.value)}/>
                 <button onClick={() => this.props.actions.homepageActions.postText(this.props.homepage.text)}>Post</button>
+                <button onClick={this.props.actions.homepageActions.get}>Get</button>
 				<br />
                 <div>{this.props.homepage.response["value"]}</div>
                 {/* <ProfileSection /> */}
