@@ -25,7 +25,17 @@ class HomePage extends React.Component {
                 <button onClick={this.props.actions.homepageActions.get}>Get</button>
 				<br />
                 <div>{this.props.homepage.response["value"]}</div>
-                {/* <ProfileSection /> */}
+                <div>
+                    <label htmlFor="selectTest">Label</label>
+                    <select name="selectTest" onChange={(e) => {
+                        console.log("value", e.target.value)
+                    }}>
+                        <option value={0}>Please choose</option>
+                        <option value={1}>1</option>
+                        <option value={2}>2</option>
+                    </select>
+                    </div>
+                <ProfileSection dummyFun={(valueFromChild) => {console.log("Value from child is: ", valueFromChild);}}/>
                 {/*<SecondaryButton text="Cancel"/>*/}
             </div>
 

@@ -7,13 +7,14 @@ import PropTypes from "prop-types";
 const SecondaryButton = (props) => {
 	return (
 		<div className={((!props.className ? "" : props.className) + " secondary-button").trim()}>
-			<button>{props.text}</button>
+			<button onClick={props.onClick}>{props.text}</button>
 		</div>
 	);
 };
 
 SecondaryButton.propTypes = {
 	className: PropTypes.string,
+	onClick: PropTypes.func,
 	text: PropTypes.string
 };
 

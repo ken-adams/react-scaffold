@@ -24,7 +24,7 @@ const ProfileSection = (props) => {
 				Description
 			</div>
 			<div className="column is-full profile-section-btns">
-				<SecondaryButton text="Cancel" />
+				<SecondaryButton text="Cancel" onClick={() => props.dummyFun("Hello world!")}/>
 				<MainButton text="See details" />
 			</div>
 		</div>
@@ -32,7 +32,7 @@ const ProfileSection = (props) => {
 };
 
 ProfileSection.propTypes = {
-
+	dummyFun: PropTypes.func
 };
 
 export default ProfileSection;
