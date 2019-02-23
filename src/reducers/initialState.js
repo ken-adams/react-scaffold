@@ -1,6 +1,7 @@
 export default {
-    homepage: {
-        text: "",
-        response: {}
-    }
+  homepage: {
+    text: "",
+    loading: "",
+    response: {}
+  }
 };
