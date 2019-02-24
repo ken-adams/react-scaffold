@@ -8,7 +8,7 @@ const HomePage = props => (
   <div className="homepage">
     <h1>Home Page</h1>
     <label htmlFor="text">Enter text:</label>
-    <input type="text" name="text" onChange={e => props.textChanged(e.target.value)} />
+    <input type="text" name="text" onChange={props.textChanged} />
     <button onClick={props.postText}>Post request</button>
     <br />
     <div>{props.loading || props.response["data"]}</div>

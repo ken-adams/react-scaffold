@@ -3,7 +3,7 @@ import * as types from "./actionTypes";
 const responseAppeared = value => ({ type: types.HOMEPAGE_RESPONSE_APPEARED, value });
 const requestLoading = { type: types.HOMEPAGE_REQUEST_LOADING };
 
-export const textChanged = value => ({ type: types.HOMEPAGE_TEXT_CHANGED, value });
+export const textChanged = e => ({ type: types.HOMEPAGE_TEXT_CHANGED, value: e.target.value });
 
 export const postText = () => (dispatch, getState) => {
   let { homepage } = getState();
