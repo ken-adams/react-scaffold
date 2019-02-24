@@ -1,13 +1,13 @@
 import * as types from "./actionTypes";
 
 const responseAppeared = value => ({ type: types.HOMEPAGE_RESPONSE_APPEARED, value });
-const requestLoading = () => ({ type: types.HOMEPAGE_REQUEST_LOADING });
+const requestLoading = { type: types.HOMEPAGE_REQUEST_LOADING };
 
 export const textChanged = value => ({ type: types.HOMEPAGE_TEXT_CHANGED, value });
 
 export const postText = () => (dispatch, getState) => {
   let { homepage } = getState();
-  dispatch(requestLoading());
+  dispatch(requestLoading);
   return fetch("https://httpbin.org/post", {
     method: "post",
     headers: {
